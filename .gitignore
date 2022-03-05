@@ -2,6 +2,7 @@
 /frontend/node_modules/*
 /frontend/.pnp
 /frontend/.pnp.js
+.env
 
 # testing
 ./frontend/coverage
