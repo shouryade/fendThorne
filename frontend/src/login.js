@@ -1,9 +1,12 @@
 import React from 'react'
+import backgroundSvg from './background/backgroundSvg.svg'
 
 function Login() {
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      {/* <img src={backgroundSvg} alt="like" />  */}
+      <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center min-h-screen">
+      {/* <div className="flex items-center justify-center min-h-screen bg-gray-100"> */}
       <div className="px-8 py-6 mt-4 text-left bg-white shadow-lg">
         <div className="flex justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 text-blue-600" fill="none" viewBox="0 0 24 24"
@@ -36,7 +39,8 @@ function Login() {
             </div>
         </form>
       </div>
-    </div>
+    {/* </div> */}
+      </div>
     </>
   )
 }
