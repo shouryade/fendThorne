@@ -1,7 +1,7 @@
 import { useStore } from "redux";
 import { Wallet } from "ethers";
 
-import padPublicKey from "../utils/padPublicKey";
+import padPublicKey from "./utils/padPublicKey";
 
 const ARCANA_APP_ID = process.env.ARCANA_APP_ID;
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
@@ -63,12 +63,10 @@ function useArcanaAuth() {
   }
 
   function handleRedirect() {
-    // AUTH-4: Handle auth flow on the redirect page.
     AuthProvider.handleRedirectPage(window.location);
   }
 
   async function logout() {
-    // AUTH-5: Log a user out.
     await authInstance.logout();
     store.dispatch("clearStore");
   }
@@ -81,6 +79,6 @@ function useArcanaAuth() {
   };
 }
 
-export { authInstance };
+export { authInstance, useArcanaAuth };
 
-export default useArcanaAuth;
+// export default useArcanaAuth;
