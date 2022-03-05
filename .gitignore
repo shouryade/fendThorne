@@ -1,7 +1,10 @@
 /backend/node_modules/*
 /frontend/node_modules/*
+/frontend/package-lock.json
+/backend/package-lock.json
 /frontend/.pnp
 /frontend/.pnp.js
+.env
 
 # testing
 ./frontend/coverage
