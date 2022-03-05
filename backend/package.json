@@ -4,15 +4,19 @@
   "description": "Hackathon Submission for makeathon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js localhost 3080"
   },
   "author": "shouryade",
   "license": "MIT",
   "dependencies": {
     "@arcana/auth": "^0.0.8",
     "@arcana/storage": "^0.1.3",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
     "bytes": "^3.1.2",
     "ethers": "^5.5.4",
+    "express": "^4.17.3",
     "file-saver": "^2.0.5",
     "moment": "^2.29.1",
     "pragmatic-email-regex": "^1.0.4",

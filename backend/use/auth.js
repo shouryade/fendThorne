@@ -32,8 +32,6 @@ function useArcanaAuth() {
   async function login() {
     if (!isLoggedIn()) {
       store.dispatch("showLoader", "Logging in...");
-      // AUTH-3a: If user does not have an active session,
-      // trigger the Google authentication process.
       await authInstance.loginWithSocial("google");
     }
 
