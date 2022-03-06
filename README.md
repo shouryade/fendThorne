@@ -36,6 +36,10 @@ Install the required packages for the project.
 Run the project using `npm run dev`.  
 Navigate to http://localhost:3000.  
 Since Vite supports Hot Module Reloading, you can make changes on-the-go with the localhost server up and running.
+
+## Run using Docker
+The following command would create and start the container from the image created.
+`docker run -it -p 3000:3000 -d --name fendThorne shouryade/fendThorne`
     
 
 
