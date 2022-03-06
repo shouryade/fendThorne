@@ -3,9 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import DKToast from "vue-dk-toast";
+import VueAnalytics from 'vue-analytics';
 import "@/index.css";
 
 const app = createApp(App);
+
+// Vue.use(VueAnalytics, {
+//   id: 'UA-xxxxxxxxx-x'
+// });
 
 app.use(router);
 app.use(store);

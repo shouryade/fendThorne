@@ -6,7 +6,7 @@
 
 <style scoped>
 .bg-color {
-  background-color: #d4f1f3;
+  background-color: #D086B6;
   overflow-y: hidden;
 }
 .padding-20px {

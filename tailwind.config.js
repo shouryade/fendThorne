@@ -5,7 +5,6 @@ module.exports = {
     extend: {},
   },
   variants: {
-    textColor:['active'],
     extend: {
       width: ["hover"],
       margin: ["hover"],

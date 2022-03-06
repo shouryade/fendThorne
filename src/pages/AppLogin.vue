@@ -1,12 +1,12 @@
 <template>
   <div class="absolute login-container p-10 text-center">
     <img
-      src="@/assets/cloud.png"
-      style="height: 150px; display: inline"
+      src="@/assets/cloudStorage.png"
+      style="height: 200px; display: inline"
     />
     <h1 class="font-medium leading-tight text-5xl mt-4 mb-2 "> FendThorne </h1>
     <div class="inline-block mt-8">
-      By clicking on signin with google, you agree to FendThorne's
+      By clicking on signin with Google, you agree to FendThorne's
       <a href="/" style="color: #058aff; text-decoration: none"> Privacy </a>
       &
       <a href="/" style="color: #058aff; text-decoration: none"> Terms </a>
@@ -31,11 +31,12 @@
   min-width: 480px;
   max-width: 640px;
   width: 50%;
+  color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: #6eb9f7;
+  background: #1B163A;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

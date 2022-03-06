@@ -133,7 +133,7 @@
 .sidebar,
 .sidebar-active {
   width: 350px;
-  background-color: #2c2525;
+  background-color: #c0dbe2;
 }
 
 .menu {
@@ -141,7 +141,7 @@
 }
 
 .menu a {
-  color: white;
+  color: rgb(0, 0, 0);
   width: 240px;
   padding: 10px 25px;
   border-radius: 30px;
@@ -250,8 +250,8 @@ import {
 import bytes from "bytes";
 import FullScreenOverlay from "./FullScreenOverlay.vue";
 
-const UNLIMITED = "Unlimited";
-const TEN_TB = "10 TB";
+// const UNLIMITED = "Unlimited";
+// const TEN_TB = "10 TB";
 
 export default {
   name: "AppSidebar",
@@ -268,39 +268,39 @@ export default {
     const store = useStore();
     let liquidMenuTranslate = ref("");
     let menu = ref(false);
-    let storage = computed(() => {
-      const storageState = store.getters.storage;
-      if (storageState.totalStorage === bytes(TEN_TB)) {
-        storageState.totalStorage = UNLIMITED;
-        return {
-          ...storageState,
-          percentage: storageState.storageUsed === 0 ? 0 : 1,
-        };
-      }
-      const percentage =
-        (storageState.storageUsed / storageState.totalStorage) * 100;
-      return {
-        ...storageState,
-        percentage,
-      };
-    });
+    // let storage = computed(() => {
+    //   // const storageState = store.getters.storage;
+    //   // if (storageState.totalStorage === bytes(TEN_TB)) {
+    //   //   storageState.totalStorage = UNLIMITED;
+    //   //   return {
+    //   //     ...storageState,
+    //   //     percentage: storageState.storageUsed === 0 ? 0 : 1,
+    //   //   };
+    //   // }
+    //   // const percentage =
+    //   //   (storageState.storageUsed / storageState.totalStorage) * 100;
+    //   return {
+    //     ...storageState,
+    //     percentage,
+    //   };
+    // });
 
-    let bandwidth = computed(() => {
-      const bandwidthState = store.getters.bandwidth;
-      if (bandwidthState.totalBandwidth === bytes(TEN_TB)) {
-        bandwidthState.totalBandwidth = UNLIMITED;
-        return {
-          ...bandwidthState,
-          percentage: bandwidthState.bandwidthUsed === 0 ? 0 : 1,
-        };
-      }
-      const percentage =
-        (bandwidthState.bandwidthUsed / bandwidthState.totalBandwidth) * 100;
-      return {
-        ...bandwidthState,
-        percentage,
-      };
-    });
+    // let bandwidth = computed(() => {
+    //   const bandwidthState = store.getters.bandwidth;
+    //   if (bandwidthState.totalBandwidth === bytes(TEN_TB)) {
+    //     bandwidthState.totalBandwidth = UNLIMITED;
+    //     return {
+    //       ...bandwidthState,
+    //       percentage: bandwidthState.bandwidthUsed === 0 ? 0 : 1,
+    //     };
+    //   }
+    //   const percentage =
+    //     (bandwidthState.bandwidthUsed / bandwidthState.totalBandwidth) * 100;
+    //   return {
+    //     ...bandwidthState,
+    //     percentage,
+    //   };
+    // });
 
     onMounted(() => {
       window.onresize = function () {
