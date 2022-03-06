@@ -2,7 +2,7 @@
   <div class="header h-10 lg:hidden">
     <!-- <MenuIcon class="h-7 w-7 inline-block mr-2 text-white" /> -->
     <img
-      src="@/assets/rocket-science.png"
+      src="@/assets/cloudStorage.png"
       class="inline-block cursor-pointer -mt-2"
       width="280"
       @click.stop="openMenu"
@@ -22,7 +22,7 @@
     </div>
     <div class="hero-image -ml-2 mt-8">
       <img
-        src="@/assets/rocket-science.png"
+        src="@/assets/cloudStorage.png"
         width="280"
         class="mt-4 lg:mt-8 inline"
       />
@@ -250,8 +250,8 @@ import {
 import bytes from "bytes";
 import FullScreenOverlay from "./FullScreenOverlay.vue";
 
-// const UNLIMITED = "Unlimited";
-// const TEN_TB = "10 TB";
+const UNLIMITED = "Unlimited";
+const TEN_TB = "10 TB";
 
 export default {
   name: "AppSidebar",
