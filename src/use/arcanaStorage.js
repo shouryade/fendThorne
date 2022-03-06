@@ -128,7 +128,7 @@ function useArcanaStorage() {
       // Announce the upload success.
       toast("Upload Success", successToast);
       toast(
-        "Transaction successfully updated in arcana network's blockchain",
+        "Transaction successfully updated in fendThorne's Arcana blockchain",
         successToast
       );
     

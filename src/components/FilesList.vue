@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 ml-6 lg:ml-16">
+  <div class="text-black mt-6 ml-6 lg:ml-16">
     <div
       class="inline-block px-6 py-1 font-bold"
       style="
@@ -31,11 +31,11 @@
           "
         />
         <br />
-        <span v-if="pageTitle === 'My Files'">Upload a file to begin</span>
-        <span v-else-if="pageTitle === 'Shared With Me'">
+        <span class="text-black" v-if="pageTitle === 'My Files'">Upload a file to begin</span>
+        <span class="text-black" v-else-if="pageTitle === 'Shared With Me'">
           No files shared with you
         </span>
-        <span v-else>No files added to Bin</span>
+        <span class="text-black" v-else>No files added to Bin</span>
       </div>
     </div>
     <div v-else class="mt-6 lg:ml-4 mr-6 lg:mr-16">
@@ -47,10 +47,10 @@
         <table style="min-width: 100%; width: max-content" class="font-bold">
           <thead style="color: #b9b8b8">
             <tr>
-              <th class="uppercase text-left">File ID</th>
-              <th class="uppercase" style="width: 140px">Last Modified</th>
-              <th class="uppercase mb-6 text-left" style="width: 80px">Size</th>
-              <th class="uppercase mb-6" style="width: 240px">Actions</th>
+              <th class="text-black uppercase text-left">File ID</th>
+              <th class="text-black uppercase" style="width: 140px">Last Modified</th>
+              <th class="text-black uppercase mb-6 text-left" style="width: 80px">Size</th>
+              <th class="text-black uppercase mb-6" style="width: 240px">Actions</th>
             </tr>
           </thead>
           <tbody style="color: #707070">
@@ -59,11 +59,12 @@
               :key="file.fileId"
               style="border-bottom: 2px solid #a1cdf8"
             >
-              <td class="pt-6 pb-3" style="width: calc(30vw + 3em)">
+              <td class="text-black pt-6 pb-3" style="width: calc(30vw + 3em)">
                 <n-tooltip trigger="hover">
                   <template #trigger>
                     <span
                       class="
+                        text-black
                         inline-block
                         overflow-ellipsis overflow-hidden
                         whitespace-nowrap
@@ -86,14 +87,14 @@
                   Pseudonymous File ID
                 </n-tooltip>
               </td>
-              <td class="pt-6 pb-3 align-middle text-center">
+              <td class="text-black pt-6 pb-3 align-middle text-center">
                 {{ getReadableDate(file.uploaded_on) }}
               </td>
-              <td class="pt-6 pb-3 align-middle">
+              <td class="text-black pt-6 pb-3 align-middle">
                 {{ getReadableSize(file.size) }}
               </td>
               <td>
-                <div class="mt-2 py-2 text-center">
+                <div class="text-black mt-2 py-2 text-center">
                   <n-tooltip
                     trigger="hover"
                     v-for="item in menuItems"
