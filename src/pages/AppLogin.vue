@@ -4,12 +4,12 @@
       src="@/assets/cloudStorage.png"
       style="height: 200px; display: inline"
     />
-    <h1 class="font-medium leading-tight text-5xl mt-4 mb-2 "> FendThorne </h1>
+    <h1 class="font-medium leading-tight text-5xl mt-4 mb-2 "> fendThorne </h1>
     <div class="inline-block mt-8">
-      By clicking on signin with Google, you agree to FendThorne's
-      <a href="/" style="color: #058aff; text-decoration: none"> Privacy </a>
+      By clicking on Sign In with Google, you agree to share your email with fendThorne.
+      <!-- <a href="/" style="color: #058aff; text-decoration: none"> Privacy </a>
       &
-      <a href="/" style="color: #058aff; text-decoration: none"> Terms </a>
+      <a href="/" style="color: #058aff; text-decoration: none"> Terms </a> -->
     </div>
     <div
       id="google-signin-button"

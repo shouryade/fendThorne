@@ -147,7 +147,7 @@
         <span class="font-medium">Logout</span>
       </div>
       <hr class="mx-3 p-0 m-0" style="border: 1px solid #e0e0e0" />
-      <div
+      <!-- <div
         class="
           overflow-ellipsis
           w-full
@@ -156,15 +156,15 @@
           py-2
           px-5
         "
-      >
-        <a
+      > -->
+        <!-- <a
           href="https://arcana.network"
           target="__blank"
           style="color: #058aff"
         >
           Powered by Arcana.Network
-        </a>
-      </div>
+        </a> -->
+      <!-- </div> -->
     </div>
   </div>
 </template>
