@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-      bg-white
+      bg-lightblue-300
       files-container
       fixed
       right-3
