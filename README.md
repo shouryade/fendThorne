@@ -1,6 +1,8 @@
 ![Logo](src/assets/cloudStorage-copy.png)  
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 ![npm version](https://img.shields.io/npm/v/npm)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/876764fd-0401-4b4b-a33e-684a466243a6/deploy-status)](https://app.netlify.com/sites/epic-hawking-e816f7/deploys)
+
 
 # fendThorne
 
