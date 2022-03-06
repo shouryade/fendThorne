@@ -18,7 +18,7 @@ To run this project, rename the .env.example file to .env
 * Create an application for the OAuth flow from [Google Developer Console](https://console.cloud.google.com/) and obtain the Client ID after configuring the consent screen.
 Populate the `VITE_ARCANA_APP_ID` and `VITE_GOOGLE_CLIENT_ID` with the respective IDs.  
 
-**Note:** Remember to set the origin to [http://localhost:3000](http://localhost:3000) and the redirect url to http://localhost:3000/auth/redirect
+**Note:** Remember to set the origin to [http://localhost:3000](http://localhost:3000) and the redirect url to http://localhost:3000/auth/redirect when configuring the OAuth Client ID. 
 
 
 ## Local Development

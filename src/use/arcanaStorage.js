@@ -168,12 +168,12 @@ function useArcanaStorage() {
       }
       store.dispatch("hideLoader");
     };
+
     downloader.onSuccess = () => {
       fetchStorageLimits();
-    
       toast("All chunks downloaded", successToast);
       toast(
-        "Transaction successfully updated in arcana network's blockchain",
+        "Transaction successfully updated in testnet blockchain",
         successToast
       );
       store.dispatch("hideLoader");
