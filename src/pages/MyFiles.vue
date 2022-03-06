@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-      bg-lightblue-300
+      bgcol
       files-container
       fixed
       right-3

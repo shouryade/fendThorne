@@ -2,9 +2,9 @@
   <div class="header h-10 lg:hidden">
     <!-- <MenuIcon class="h-7 w-7 inline-block mr-2 text-white" /> -->
     <img
-      src="@/assets/cloudStorage.png"
+      src="@/assets/cloudStorage-copy.png"
       class="inline-block cursor-pointer -mt-2"
-      width="280"
+      width="200"
       @click.stop="openMenu"
     />
   </div>
@@ -22,23 +22,23 @@
     </div>
     <div class="hero-image -ml-2 mt-8">
       <img
-        src="@/assets/cloudStorage.png"
-        width="280"
+        src="@/assets/cloudStorage-copy.png"
+        width="200"
         class="mt-4 lg:mt-8 inline"
       />
     </div>
     <div class="menu mt-24" style="font-size: 1rem">
       <router-link to="/my-files" class="inline-block mx-10 my-2 font-bold">
-        <FolderOpenIcon class="h-6 w-6 inline -mt-1 mr-2" />
-        My Files
+        <FolderOpenIcon class="text-white h-6 w-6 inline -mt-1 mr-2" />
+        <span class="text-white">My files</span>
       </router-link>
       <br />
       <router-link
         to="/shared-with-me"
         class="inline-block mx-10 my-2 font-bold"
       >
-        <UsersIcon class="h-6 w-6 inline -mt-1 mr-2" />
-        Shared With Me
+        <UsersIcon class="text-white h-6 w-6 inline -mt-1 mr-2" />
+        <span class="text-white">Shared With Me</span>
       </router-link>
       <br />
       
@@ -57,7 +57,7 @@
         ></div>
       </div>
       <div
-        class="absolute menu-liquid-inset-curve h-12 w-12 bg-white"
+        class="absolute menu-liquid-inset-curve h-12 w-12"
         style="z-index: 0"
       >
         <div
@@ -68,7 +68,7 @@
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 18px;
             z-index: -1;
-            background-color: #2c2525;
+            <!-- background-color: #2c2525; -->
           "
         ></div>
         <div
@@ -79,7 +79,7 @@
             border-top-right-radius: 20px;
             border-top-left-radius: 18px;
             z-index: -1;
-            background-color: #2c2525;
+            <!-- background-color: #2c2525; -->
           "
         ></div>
       </div>
@@ -133,7 +133,7 @@
 .sidebar,
 .sidebar-active {
   width: 350px;
-  background-color: #c0dbe2;
+  background-color: #1B163A;
 }
 
 .menu {
