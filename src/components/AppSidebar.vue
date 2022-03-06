@@ -269,16 +269,16 @@ export default {
     let liquidMenuTranslate = ref("");
     let menu = ref(false);
     let storage = computed(() => {
-      // const storageState = store.getters.storage;
-      // if (storageState.totalStorage === bytes(TEN_TB)) {
-      //   storageState.totalStorage = UNLIMITED;
-      //   return {
-      //     ...storageState,
-      //     percentage: storageState.storageUsed === 0 ? 0 : 1,
-      //   };
-      // }
-      // const percentage =
-      //   (storageState.storageUsed / storageState.totalStorage) * 100;
+      const storageState = store.getters.storage;
+      if (storageState.totalStorage === bytes(TEN_TB)) {
+        storageState.totalStorage = UNLIMITED;
+        return {
+          ...storageState,
+          percentage: storageState.storageUsed === 0 ? 0 : 1,
+        };
+      }
+      const percentage =
+        (storageState.storageUsed / storageState.totalStorage) * 100;
       return {
         ...storageState,
         percentage,
