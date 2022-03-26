@@ -9,8 +9,7 @@
 **fendThorne** is a decentralised cloud storage system built for army personnel to securely **upload**, **download** and **share** files.
 It uses **Arcana SDK** and **Google OAuth** under the hood for storage of files and authentication of users respectively.  
 
-Hackathon Submission for **Makeathon 4.0** 
-
+Overall Winner at **Makeathon 4.0** 
 
 ## Environment Variables
 
